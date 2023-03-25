@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Rekomendasi Kuliner Samarinda</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="nav">
+            <div class="logo">
+                <a href="utama.html">
+                    <h1>Kuliner <span> Samarinda</span></h1>
+                </a>
+            </div>
+            <ul>
+                <li><a href="utama.html">Beranda</a></li>
+                <li><a href="tentang.html">Tentang</a></li>
+                <li><a href="rekomen.html">Rekomendasi</a></li>
+                <li><a href="saran.html">Saran</a></li>
+                <li><a href="index.php">Logout</a></li>
+            </ul>
+        </div>
+
+        <section class="section-wrapper">
+            <div class="box-wrapper">
+        <div class="info-wrap">
+        <h2 class="info-title">Kamu Punya Saran Tempat Kuliner <span> Samarinda</span>?</h2>  
+        <h3 class="info-sub-title">Isi form di samping ya! Kami akan melihat tempat rekomendasi dari kamu dan memasukkan ke dalam list rekomendasi Kuliner <span> Samarinda</span></h3>
+        <img src="img/woman.png" alt="" width="300px" height="auto">
+       
+    </div>
+    <div class="form-wrap">
+        <form action="#" method="post">
+            <h2 class="form-title">Info Rekomendasi Kuliner</h2>
+            <div class="form-fields">
+                <div class="form-group">
+                <label> Nama: </label> <br>
+                <input type="text" name="Nama" id="Nama" placeholder="Masukkan Nama Anda" required> 
+                <br><br/>
+                
+                <label>Email: </label><br>
+                <input type="email" name="email" id="email" placeholder="Masukkan E-mail Anda" required><br><br/>
+               
+                <label>Media Sosial: </label><br>
+                <input type="text" name="medsos" id="medsos" placeholder="Masukkan Media Sosial Anda" required><br><br/>
+                
+                <label>Jenis Kuliner:</label><br>
+                <input type="radio" id="kuli" name="jns" value="lokal"/>Lokal
+                <input type="radio" id="kuli" name="jns" value="western"/>Western
+                <br><br/>
+                
+                <label>Jenis Menu:</label><br>
+                <td><input type="checkbox" id="makananberat" name="menu[]" value="makanan berat">Makanan Berat</td>
+                <td><input type="checkbox" id="snack" name="menu[]" value="snack">Snack</td>
+                <td><input type="checkbox" id="minum" name="menu[]" value="minum">Minuman</td>
+                <br><br/>
+                
+                <label>Tempat:</label><br>
+                <select id="tmpt" name="tmpt">
+                    <option disabled selected>-- Tempat--</option>
+                    <option>Cafe</option>
+                    <option>Restoran</option>
+                    <option>Warung</option>
+                </select>
+                <br><br/>
+                <label>Foto Menu/Tempat:</label><br>
+                <input type="file" name="file" id="gbr">
+                <br><br/>
+                <label>Detail Tempat/Alamat:</label>
+                <br>
+                <textarea id="almt" name="alamat" required placeholder="Tulis alamat lengkap disini"></textarea>
+                <br><br/>
+                <input type="button" value="KIRIM" onclick="saveForm()">
+                    <br><br/>
+                <div class="data">
+                    <div id="hasil"></div>
+                </div>
+    </div>      
+</div>
+</section>
+<div class="footer">
+    <p>Copyright © 2023 Namira Aida Hairunnisa</p>
+</div>
+</body>
+<script src="saran.js"></script>
+</html>
